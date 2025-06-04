@@ -47,6 +47,7 @@ import Link from "next/link";
 import { PrismaClient } from "../generated/prisma"
 import DeleteButton from "./DeleteButton";
 import { revalidatePath } from "next/cache";
+export const dynamic = "force-dynamic";
 
 export default async function Student() {
 

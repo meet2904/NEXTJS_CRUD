@@ -1,5 +1,6 @@
 import { PrismaClient } from "@/app/generated/prisma";
 import Link from "next/link";
+export const dynamic = "force-dynamic";
 
 export default async function GetStudentByID({ params }: { params: Promise<{ id: number }> }) {
     const { id } = await params;
