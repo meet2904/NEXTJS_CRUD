@@ -13,4 +13,5 @@ model stu_details {
   Stu_Name  String @db.VarChar(300)
   Stu_Email String @db.VarChar(500)
   Stu_Age   Int
+  Stu_img   String @db.VarChar(4000)
 }

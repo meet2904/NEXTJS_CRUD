@@ -55,6 +55,7 @@ export default async function Student() {
 
   async function deleteUser(id: any) {
     "use server"
+    
     const prisma = new PrismaClient();
     const dataDelete = await prisma.stu_details.delete({
       where: {
