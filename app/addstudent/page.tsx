@@ -1,5 +1,6 @@
 import { redirect } from "next/navigation";
 import { PrismaClient } from "../generated/prisma";
+export const dynamic = "force-dynamic";
 
 export default function AddStudent() {
 

@@ -109,10 +109,10 @@
 
 
 import { PrismaClient } from "@/app/generated/prisma";
-import Link from "next/link";
-import DeleteButton from "../DeleteButton";
 import { revalidatePath } from "next/cache";
+import Link from "next/link";
 import { redirect } from "next/navigation";
+import DeleteButton from "../DeleteButton";
 
 export default async function GetStudentByID({ params }: { params: Promise<{ id: number }> }) {
     const { id } = await params;
